@@ -8,7 +8,7 @@
 #   ingressClassName: nginx
 
 #   rules:
-#   - host: bank.local
+#   - host: bank.local    just have to comment this
 
 #     http:
 
