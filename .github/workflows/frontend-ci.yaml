@@ -23,8 +23,8 @@ jobs:
 
     - name: Build frontend image
       run: |
-        docker build -t pcdeking/online-bank-app-frontend:latest ./frontend-react
+        docker build -t pcdeking/online-bank-app-frontend:${{ github.sha }} ./frontend-react
 
     - name: Push image
       run: |
-        docker push pcdeking/online-bank-app-frontend:latest
+        docker push pcdeking/online-bank-app-frontend:${{ github.sha }} 

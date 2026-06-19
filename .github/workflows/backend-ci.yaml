@@ -23,8 +23,8 @@ jobs:
 
     - name: Build backend image
       run: |
-        docker build -t pcdeking/online-bank-app-backend:latest ./backend
+        docker build -t pcdeking/online-bank-app-backend:${{ github.sha }} ./backend
 
     - name: Push image
       run: |
-        docker push pcdeking/online-bank-app-backend:latest
+        docker push pcdeking/online-bank-app-backend:${{ github.sha }} 
