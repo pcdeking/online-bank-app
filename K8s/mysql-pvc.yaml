@@ -8,8 +8,8 @@ spec:
   accessModes:
     - ReadWriteOnce
 
-  storageClassNmae: gp2
-  
+  storageClassNmae: gp2 
+
   resources:
     requests:
       storage: 1Gi
