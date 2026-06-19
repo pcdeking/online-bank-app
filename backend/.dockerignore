@@ -1,0 +1,6 @@
+# ignore the specific files
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env

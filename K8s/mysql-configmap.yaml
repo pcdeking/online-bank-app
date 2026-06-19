@@ -1,0 +1,19 @@
+apiVersion: v1
+data:
+  init.sql: "CREATE DATABASE IF NOT EXISTS online_bank;\r\n\r\nUSE online_bank;\r\n\r\nCREATE
+    TABLE users (\r\n    id INT AUTO_INCREMENT PRIMARY KEY,\r\n    username VARCHAR(50)
+    UNIQUE,\r\n    password VARCHAR(255),\r\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\r\n);\r\n\r\nCREATE
+    TABLE accounts (\r\n    id INT AUTO_INCREMENT PRIMARY KEY,\r\n    user_id INT,\r\n
+    \   account_number VARCHAR(20),\r\n    balance DECIMAL(10,2),\r\n    created_at
+    TIMESTAMP DEFAULT CURRENT_TIMESTAMP\r\n);\r\n\r\nCREATE TABLE transactions (\r\n
+    \   id INT AUTO_INCREMENT PRIMARY KEY,\r\n    account_id INT,\r\n    amount DECIMAL(10,2),\r\n
+    \   description VARCHAR(255),\r\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\r\n);\r\n\r\nINSERT
+    INTO users(username,password)\r\nVALUES\r\n(\r\n'alice',\r\n'$2b$10$rwmPmJXdcJ7iUNe1X96GCuTVlLf1K6GvYSF0FUNSGjZj8DP/2PFhy'\r\n),\r\n(\r\n'chuks',\r\n'$2b$10$LRfHAp9w58GSuDW./foPqOZlKDPq07K.t2nCx6ISmuSYw8rq2p.re'\r\n);\r\n\r\nINSERT
+    INTO accounts(user_id,account_number,balance)\r\nVALUES\r\n(1,'100001',5000),\r\n(2,'100002',3000);\r\n\r\nINSERT
+    INTO transactions(account_id,amount,description)\r\nVALUES\r\n(1,2500,'Salary
+    Credit'),\r\n(1,-120.50,'Electricity Bill'),\r\n(1,-35,'Coffee Shop'),\r\n(2,1000,'Freelance
+    Payment'),\r\n(2,-75,'Internet Subscription');"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: mysql-initdb-config
