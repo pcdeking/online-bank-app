@@ -20,3 +20,15 @@ terraform.tfstate.backup
 kubeconfig
 
 .DS_Store
+
+docs
+bank-multicloud-platform/
+.terraform.lock.hcl
+bank-multicloud-platform/terraform/environments/staging/terraform.tfvars
+ bank-multicloud-platform/terraform/environments/dev/.terraform/providers/registry.terraform.io/hashicorp/aws/6.52.0/windows_amd64/terraform-provider-aws_v6.52.0_x5.exe
+bank-multicloud-platform/terraform/backend/.terraform/providers/registry.terraform.io/hashicorp/aws/6.51.0/windows_amd64/terraform-provider-aws_v6.51.0_x5.exe is 886.98 MB; this exceeds GitHub's file size limit of 100.00 MB
+File bank-multicloud-platform/terraform/environments/dev/.terraform/providers/registry.terraform.io/hashicorp/aws/6.52.0/windows_amd64/terraform-provider-aws_v6.52.0_x5.exe is 889.26 MB; this exceeds GitHub's file size limit of 100.00 MB
+
+# Block all local terraform caches globally
+**/.terraform/
+*.exe
