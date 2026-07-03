@@ -4,8 +4,7 @@
 
 
 
-https://github.com/user-attachments/assets/beababe2-a57e-4331-9900-be6cc5b19f80
-
+https://github.com/user-attachments/assets/16d612f9-5f1e-4786-acd8-0da9627791eb
 
 
 ![Architecture Diagram](docs/architecture.png)
