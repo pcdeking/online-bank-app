@@ -2,7 +2,14 @@
 
 > A production-style cloud-native banking application built with modern DevOps practices, deployed on AWS EKS using Kubernetes, GitOps, CI/CD automation, and enterprise-grade observability.
 
+
+
+https://github.com/user-attachments/assets/beababe2-a57e-4331-9900-be6cc5b19f80
+
+
+
 ![Architecture Diagram](docs/architecture.png)
+<img width="344" height="311" alt="Screenshot 2026-06-22 210028" src="https://github.com/user-attachments/assets/98354ba9-1a3f-41d1-b9e0-e201dbc370c4" />
 
 ---
 
