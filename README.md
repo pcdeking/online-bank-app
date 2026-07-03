@@ -4,7 +4,10 @@
 
 
 
-https://github.com/user-attachments/assets/16d612f9-5f1e-4786-acd8-0da9627791eb
+
+
+https://github.com/user-attachments/assets/e964c11e-7cd2-4a74-9b93-8000203c7685
+
 
 
 ![Architecture Diagram](docs/architecture.png)
