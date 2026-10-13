@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY package*.json /app/
 
+install the build tool
 RUN npm install
 
 COPY . .
