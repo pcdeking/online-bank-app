@@ -35,6 +35,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 
+# Single stage dockerfile
 
 # FROM node:22-alpine
 
